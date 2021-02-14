@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Calculadora</title>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+
+		<div class="display">
+			<input type="text" id="display">
+		</div>
+
+		<div class="buttons">
+			<button onclick="porcentagem()">%</button> 
+			<button onclick="botaoLigaDesliga()">CE</button> 
+			<button onclick="resete()">C</button> 
+			<button onclick="apagar()">↩</button>
+			<button onclick="umsobreX()">1/x</button>
+			<button onclick="elevaQuadrado()">x²</button>
+			<button onclick="raiz()">√x</button> 
+			<button onclick="botaoOperador(this)">/</button>
+			<button onclick="botaoNumerico(this)">7</button> 
+			<button onclick="botaoNumerico(this)">8</button> 
+			<button onclick="botaoNumerico(this)">9</button> 
+			<button onclick="botaoOperador(this)">x</button>
+			<button onclick="botaoNumerico(this)">4</button> 
+			<button onclick="botaoNumerico(this)">5</button> 
+			<button onclick="botaoNumerico(this)">6</button> 
+			<button onclick="botaoOperador(this)">-</button>
+			<button onclick="botaoNumerico(this)">1</button>
+			<button onclick="botaoNumerico(this)">2</button> 
+			<button onclick="botaoNumerico(this)">3</button> 
+			<button onclick="botaoOperador(this)">+</button>
+			<button onclick="maisouMenos()">+/-</button> 
+			<button onclick="botaoNumerico(this)">0</button> 
+			<button onclick="adicionaPonto(this)">.</button> 
+			<button onclick="botaoIgual()">=</button>
+		</div>
+		
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>
