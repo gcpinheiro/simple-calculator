@@ -34,19 +34,34 @@ function botaoOperador(botao) {
 	}	
 }
 
+function temPonto(){
+	let existePonto = false;
+	for(let i = display.value.length - 1; display.value[i] != "+" && display.value[i] != "-" &&
+	display.value[i] != "/" && display.value[i] != "x" && i >= 0; i--){
+		if (display.value[i] == "."){
+			existePonto = true;
+
+		}
+	}
+	return existePonto;
+}
 function adicionaPonto(botao) {
 	if(displayStatus.ligado){
+		let existePonto = temPonto()
+		if (!existePonto) {
+			display.value += "" + botao.innerHTML + "";
+		} 
+		/*
 		if(display.value.substr(-1) == "."){
 			display.value = display.value.slice(0, -1);
 			display.value += "" + botao.innerHTML + "";
-		} 
-		else if(display.value.substr(-2,1) == "."){
-			display.value = display.value + ""
-		}
+		} 	
 		else{
 			display.value += "" + botao.innerHTML + "";
 		}
+		*/
 	}
+	
 
 	
 }
